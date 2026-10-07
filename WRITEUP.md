@@ -27,6 +27,8 @@ Instead of brittle regex rules, the pipeline uses **Claude (Opus 5.5 by default,
 - Assign a **confidence score (0.0–1.0)** per field based on textual clarity
 - Use `null` for missing fields rather than guessing
 
+The model call sits behind a small provider interface (chat history in, text out), so the same prompt and validation run on **Claude** (default) or **Google Gemini** (`--provider gemini`, free tier, JSON mode enabled). Swapping models is a flag, not a rewrite — useful for cost/accuracy comparisons.
+
 This approach handles messy formatting, inconsistent field names, abbreviations, and OCR noise far better than regex.
 
 ### 3. Validation Layer
@@ -73,7 +75,7 @@ A JSON array with one object per change order, each containing:
 ## Stack
 
 - **Language:** Python 3.11+
-- **LLM:** Anthropic Claude — `claude-opus-5-5` by default (via `anthropic` SDK)
+- **LLM:** Anthropic Claude — `claude-opus-5-5` by default (via `anthropic` SDK); Google Gemini `gemini-2.5-flash` as alternative (REST, no extra dependency)
 - **PDF parsing:** `pdfplumber` (recommended addition)
 - **Validation:** Pure Python
 

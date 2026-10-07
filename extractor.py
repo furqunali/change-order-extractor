@@ -3,26 +3,88 @@ Change-Order Extraction Pipeline
 Author: Furqan Ali
 Description: Extracts structured fields from messy change-order PDFs/text
              into validated JSON with confidence scores.
+
+Providers:   claude (default, ANTHROPIC_API_KEY) or gemini (GEMINI_API_KEY,
+             free tier). Select with --provider or CO_EXTRACTOR_PROVIDER.
 """
 
+import argparse
 import json
 import os
 import re
 import sys
-import anthropic
+import urllib.error
+import urllib.request
 
-MODEL = os.environ.get("CO_EXTRACTOR_MODEL", "claude-opus-5-5")
+DEFAULT_MODELS = {"claude": "claude-opus-5-5", "gemini": "gemini-2.5-flash"}
+PROVIDER = os.environ.get("CO_EXTRACTOR_PROVIDER", "claude").lower()
+MODEL = os.environ.get("CO_EXTRACTOR_MODEL") or DEFAULT_MODELS.get(PROVIDER)
 MAX_ATTEMPTS = 2  # first try + one corrective re-prompt on invalid JSON
 
 _client = None
 
 
-def get_client() -> anthropic.Anthropic:
-    """Create the API client on first use (reads ANTHROPIC_API_KEY)."""
+def get_client():
+    """Create the Anthropic client on first use (reads ANTHROPIC_API_KEY)."""
     global _client
     if _client is None:
+        import anthropic
         _client = anthropic.Anthropic()
     return _client
+
+
+def configure(provider: str, model: str = None) -> None:
+    """Switch provider/model at runtime (used by the CLI flags)."""
+    global PROVIDER, MODEL
+    if provider not in DEFAULT_MODELS:
+        raise ValueError(f"Unknown provider {provider!r}; use one of {list(DEFAULT_MODELS)}")
+    PROVIDER = provider
+    MODEL = model or os.environ.get("CO_EXTRACTOR_MODEL") or DEFAULT_MODELS[provider]
+
+
+# ─────────────────────────────────────────────
+# LLM providers — each takes a chat history of {"role", "content"} turns
+# ("user"/"assistant") and returns the model's text reply.
+# ─────────────────────────────────────────────
+def _call_claude(messages: list) -> str:
+    response = get_client().messages.create(
+        model=MODEL,
+        max_tokens=2000,
+        messages=messages,
+    )
+    return response.content[0].text
+
+
+def _call_gemini(messages: list) -> str:
+    key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    if not key:
+        raise RuntimeError("GEMINI_API_KEY is not set (free key: https://aistudio.google.com/apikey)")
+    body = {
+        "contents": [
+            {"role": "model" if m["role"] == "assistant" else "user",
+             "parts": [{"text": m["content"]}]}
+            for m in messages
+        ],
+        # JSON mode; generous token budget because thinking tokens count against it
+        "generationConfig": {"responseMimeType": "application/json",
+                             "maxOutputTokens": 8192, "temperature": 0},
+    }
+    req = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "x-goog-api-key": key},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.load(resp)
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")
+        raise RuntimeError(f"Gemini API error {e.code}: {detail[:300]}") from None
+    parts = data["candidates"][0]["content"]["parts"]
+    return "".join(p.get("text", "") for p in parts if not p.get("thought"))
+
+
+PROVIDERS = {"claude": _call_claude, "gemini": _call_gemini}
 
 # ─────────────────────────────────────────────
 # Sample messy change-order texts (realistic)
@@ -114,10 +176,10 @@ SAMPLE_CHANGE_ORDERS = [
 
 
 # ─────────────────────────────────────────────
-# Extraction via Claude API
+# Extraction via LLM
 # ─────────────────────────────────────────────
 def extract_change_order(raw_text: str) -> dict:
-    """Send raw change-order text to Claude and get structured JSON back."""
+    """Send raw change-order text to the configured LLM and get structured JSON back."""
 
     prompt = f"""You are a construction document parser specializing in change orders.
 
@@ -165,12 +227,7 @@ CHANGE ORDER TEXT:
 
     messages = [{"role": "user", "content": prompt}]
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        response = get_client().messages.create(
-            model=MODEL,
-            max_tokens=2000,
-            messages=messages,
-        )
-        raw_json = _strip_fences(response.content[0].text)
+        raw_json = _strip_fences(PROVIDERS[PROVIDER](messages))
         try:
             return json.loads(raw_json)
         except json.JSONDecodeError as e:
@@ -314,9 +371,15 @@ def run_pipeline(texts: list) -> list:
 if __name__ == "__main__":
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252
+
+    parser = argparse.ArgumentParser(description="Change-order extraction pipeline")
+    parser.add_argument("--provider", choices=sorted(DEFAULT_MODELS), default=PROVIDER)
+    parser.add_argument("--model", help="override the provider's default model")
+    args = parser.parse_args()
+    configure(args.provider, args.model)
     print("Change-Order Extraction Pipeline")
     print("Author: Furqan Ali | Sledge AI Engineer Task")
-    print(f"Model: {MODEL}")
+    print(f"Provider: {PROVIDER} | Model: {MODEL}")
     print(f"Processing {len(SAMPLE_CHANGE_ORDERS)} sample change orders...\n")
 
     results = run_pipeline(SAMPLE_CHANGE_ORDERS)

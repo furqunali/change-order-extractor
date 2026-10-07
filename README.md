@@ -3,7 +3,7 @@
 **Author:** Furqan Ali  
 **Task:** Sledge AI Engineer Application
 
-A pipeline that extracts structured fields from messy construction change-order documents into validated JSON with confidence scores — powered by Claude AI.
+A pipeline that extracts structured fields from messy construction change-order documents into validated JSON with confidence scores — powered by Claude AI, with Google Gemini (free tier) as a drop-in alternative provider.
 
 ---
 
@@ -14,6 +14,7 @@ A pipeline that extracts structured fields from messy construction change-order 
 - Validation: required fields, cost arithmetic (>5% variance flagged), duplicate CO numbers
 - Self-correcting: one re-prompt with the parse error if the model returns invalid JSON
 - Handles inconsistent formatting, abbreviations and lower-case "emergency" style notes
+- Pluggable LLM provider: Claude (default) or Gemini via `--provider gemini`
 - Offline unit tests for the validation layer (`pytest`, no API key needed)
 
 ## Quick Start
@@ -23,9 +24,20 @@ git clone https://github.com/furqunali/change-order-extractor
 cd change-order-extractor
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=your_key_here
-python extractor.py              # model: claude-opus-5-5 (override with CO_EXTRACTOR_MODEL)
+python extractor.py              # model: claude-opus-5-5 (override with --model)
 python -m pytest -q tests        # offline tests
 ```
+
+### Free alternative: Gemini
+
+No Anthropic credit? Get a free key at <https://aistudio.google.com/apikey> and run:
+
+```bash
+export GEMINI_API_KEY=your_key_here
+python extractor.py --provider gemini          # default model: gemini-2.5-flash
+```
+
+The prompt, validation, re-prompt fallback and output format are identical across providers.
 
 ## Output Sample
 
