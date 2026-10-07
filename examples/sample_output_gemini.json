@@ -1,0 +1,248 @@
+[
+  {
+    "input_index": 1,
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "CO-2024-047",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Riverside Commercial Complex – Phase 2",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-10-03",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Meridian Build Group LLC",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Riverside Dev Partners",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Due to unforeseen underground utility conflicts discovered during excavation at grid line E-7, contractor is required to reroute main sewer line approx 85 linear feet to avoid conflict. This includes additional trenching, pipe, backfill and compaction per geotech specs.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "Differing Site Conditions",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 12400.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 8750.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 3200.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 2435.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 26785.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 6,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-11-14",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "James Whitfield (Project Manager)",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": "Sara Munoz",
+        "confidence": 1.0
+      },
+      "overall_confidence": 1.0,
+      "_validation": {
+        "passed": true,
+        "issues": [],
+        "issue_count": 0
+      }
+    }
+  },
+  {
+    "input_index": 2,
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "0082",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "downtown hotel renovation 4th & main",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-11-22",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Summit Construction Inc.",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "scope_description": {
+        "value": "fire suppression system upgrade required by city inspector on nov 20 inspection. existing heads dont meet current code, full floor 3 replacement needed. work must start immediately per fire marshal order.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "code compliance / inspector requirement",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 14400.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 19200.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "overhead_markup": {
+          "value": 5167.5,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 850.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 39617.5,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 4,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-12-06",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Mike Torres GM",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "overall_confidence": 0.82,
+      "_validation": {
+        "passed": true,
+        "issues": [],
+        "issue_count": 0
+      }
+    }
+  },
+  {
+    "input_index": 3,
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "2024-CO-011",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Sunset Ridge Elementary School Expansion",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-09-15",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Pinnacle Builders Corp",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Dr. Angela Reyes, School Board",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Structural engineer identified inadequate footing depth at column grid B-3 through B-9 after reviewing original drawings vs actual soil borings. All 7 column footings must be deepened by 18 inches and reinforced per revised structural drawings SD-104 Rev B.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "Design Deficiency",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 9200.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 15900.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "overhead_markup": {
+          "value": 4408.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 7800.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 37308.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 9,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-10-28",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Angela Reyes",
+        "confidence": 0.9
+      },
+      "contractor_representative": {
+        "value": "Tom Harrington (PM)",
+        "confidence": 1.0
+      },
+      "overall_confidence": 0.94,
+      "_validation": {
+        "passed": true,
+        "issues": [],
+        "issue_count": 0
+      }
+    }
+  }
+]
