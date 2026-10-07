@@ -1,0 +1,28 @@
+CHANGE ORDER FORM
+Project Name: Sunset Ridge Elementary School Expansion
+CO #: 2024-CO-011
+Issued: September 15, 2024
+GC: Pinnacle Builders Corp
+Owner Rep: Dr. Angela Reyes, School Board
+
+Description of Work Added:
+Structural engineer identified inadequate footing depth at column grid B-3
+through B-9 after reviewing original drawings vs actual soil borings. 
+All 7 column footings must be deepened by 18 inches and reinforced per
+revised structural drawings SD-104 Rev B.
+
+Cost Summary:
+Direct Costs:
+  Excavation & shoring:  $7,800.00
+  Concrete (add'l):      $11,300.00
+  Rebar & embeds:         $4,600.00
+  Labor:                  $9,200.00
+Subtotal:                $32,900.00
+General Conditions (8%): $2,632.00
+Fee (5%):                $1,776.00
+TOTAL THIS CO:           $37,308.00
+
+Days Added: 9
+New Completion: October 28, 2024
+Category: Design Deficiency
+Signatures: Angela Reyes / Tom Harrington (PM)

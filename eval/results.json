@@ -1,0 +1,736 @@
+[
+  {
+    "source": "co_007_deduct_value_engineering.txt",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "DCO-007",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Westgate Transit Center",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2025-02-14",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Apex Civil & Structural, Inc.",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "City of Westgate - Public Works Dept.",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Deletion of the architectural steel canopy over bus bay 3 as per owner's value engineering workshop. Existing foundations remain, with anchor bolts to be cut flush and capped.",
+        "confidence": 0.9
+      },
+      "reason_code": {
+        "value": "VALUE ENGINEERING - DELETE DECORATIVE CANOPY AT BUS BAY 3",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Value Engineering",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": -4450.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": -9150.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": -1850.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": -1545.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": -16995.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": -2,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2025-06-20",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Priya Raman, P.E., City Engineer",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": "Dan Okafor, Project Executive",
+        "confidence": 1.0
+      },
+      "overall_confidence": 0.994,
+      "field_coverage": 0.944,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_0082_hotel_fire_emergency.txt",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "0082",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "downtown hotel renovation 4th & main",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-11-22",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Summit Construction Inc.",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "scope_description": {
+        "value": "Upgrade of the fire suppression system on floor 3 is required due to existing heads not meeting current code, as mandated by a city inspector and fire marshal.",
+        "confidence": 0.9
+      },
+      "reason_code": {
+        "value": "code compliance / inspector requirement",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Code/Regulatory",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 14400.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 19200.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "overhead_markup": {
+          "value": 5167.5,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 850.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 39617.5,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 4,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-12-06",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Mike Torres GM",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "overall_confidence": 0.993,
+      "field_coverage": 0.833,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_011_school_footings.txt",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "2024-CO-011",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Sunset Ridge Elementary School Expansion",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-09-15",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Pinnacle Builders Corp",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Dr. Angela Reyes, School Board",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Structural engineer identified inadequate footing depth at column grid B-3 through B-9, requiring all 7 column footings to be deepened by 18 inches and reinforced per revised structural drawings.",
+        "confidence": 0.9
+      },
+      "reason_code": {
+        "value": "Design Deficiency",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Design Error/Omission",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 9200.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 15900.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 4408.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 7800.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 37308.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 9,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-10-28",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Angela Reyes",
+        "confidence": 0.9
+      },
+      "contractor_representative": {
+        "value": "Tom Harrington",
+        "confidence": 0.9
+      },
+      "overall_confidence": 0.982,
+      "field_coverage": 0.944,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_031_scanned.pdf",
+    "input_mode": "pdf_vision",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "031",
+        "confidence": 0.95
+      },
+      "project_name": {
+        "value": "Lakeside Apartments - Bldg C",
+        "confidence": 0.95
+      },
+      "date_issued": {
+        "value": "2025-03-07",
+        "confidence": 0.95
+      },
+      "contractor_name": {
+        "value": "Delgado & Sons Construction",
+        "confidence": 0.95
+      },
+      "owner_name": {
+        "value": "Lakeside Housing LLC",
+        "confidence": 0.95
+      },
+      "scope_description": {
+        "value": "Replace 14 storm-damaged vinyl windows, units C-201 thru C-214, including flashing and trim.",
+        "confidence": 0.9
+      },
+      "reason_code": {
+        "value": "hail storm 02/26/25 (unforeseen damage)",
+        "confidence": 0.9
+      },
+      "reason_category": {
+        "value": "Emergency/Unforeseen",
+        "confidence": 0.9
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 3960.0,
+          "confidence": 0.95
+        },
+        "materials": {
+          "value": 7840.0,
+          "confidence": 0.95
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "overhead_markup": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 0.0
+        },
+        "total": {
+          "value": 11800.0,
+          "confidence": 0.95
+        }
+      },
+      "schedule_impact_days": {
+        "value": 0,
+        "confidence": 0.9
+      },
+      "new_completion_date": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "approved_by": {
+        "value": "R. Patel",
+        "confidence": 0.9
+      },
+      "contractor_representative": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "overall_confidence": 0.931,
+      "field_coverage": 0.722,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": null,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_047_riverside_sewer_reroute.txt",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "CO-2024-047",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Riverside Commercial Complex – Phase 2",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-10-03",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Meridian Build Group LLC",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Riverside Dev Partners",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Due to unforeseen underground utility conflicts discovered during excavation at grid line E-7, contractor is required to reroute main sewer line approx 85 linear feet to avoid conflict. This includes additional trenching, pipe, backfill and compaction per geotech specs.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "Differing Site Conditions",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Differing Site Conditions",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 12400.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 8750.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 3200.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 2435.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 26785.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 6,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2024-11-14",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "James Whitfield",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": "Sara Munoz",
+        "confidence": 1.0
+      },
+      "overall_confidence": 1.0,
+      "field_coverage": 0.944,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_052_email_thread.eml",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "52",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Northpoint Office Park",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2025-01-09",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Brightline Electric LLC",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Northpoint Development",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Installation of six Level 2 EV chargers in the Northpoint Office Park garage, level P2, including conduit, wire, and breakers. The owner will furnish the chargers.",
+        "confidence": 0.9
+      },
+      "reason_code": {
+        "value": "owner wants six L2 EV chargers",
+        "confidence": 0.9
+      },
+      "reason_category": {
+        "value": "Owner Request",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 7200.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 1350.0,
+          "confidence": 0.9
+        },
+        "equipment": {
+          "value": 500.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 9050.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 3,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": null,
+        "confidence": 0.0
+      },
+      "approved_by": {
+        "value": "Rachel Kim",
+        "confidence": 0.6
+      },
+      "contractor_representative": {
+        "value": "Carlos Mendez",
+        "confidence": 1.0
+      },
+      "overall_confidence": 0.953,
+      "field_coverage": 0.833,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "approved_by 'Rachel Kim' but the source has no approval/signature line"
+        ],
+        "grounded": false,
+        "needs_review": true,
+        "review_fields": [
+          "approved_by"
+        ]
+      }
+    }
+  },
+  {
+    "source": "co_118_math_error.txt",
+    "input_mode": "text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "118",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Oak Hollow Retail Center",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2025-01-21",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Keystone Commercial Builders",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Oak Hollow Partners LP",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Add 4 roof drains and associated piping at tenant space 12 after owner's tenant revised the rooftop unit layout.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "owner / tenant requested change",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Owner Request",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 4000.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 6000.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 1000.0,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 13500.0,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 2,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2025-04-04",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Greg Lambert",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": "Nina Alvarez",
+        "confidence": 1.0
+      },
+      "overall_confidence": 1.0,
+      "field_coverage": 0.889,
+      "_validation": {
+        "passed": false,
+        "errors": [
+          "Cost math mismatch: line items sum to $11,000.00 but stated total is $13,500.00 (diff -$2,500.00)"
+        ],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": true,
+        "review_fields": []
+      }
+    }
+  },
+  {
+    "source": "co_215_digital_form.pdf",
+    "input_mode": "pdf_text",
+    "status": "success",
+    "data": {
+      "change_order_number": {
+        "value": "CO-215",
+        "confidence": 1.0
+      },
+      "project_name": {
+        "value": "Harbor View Medical Office Building",
+        "confidence": 1.0
+      },
+      "date_issued": {
+        "value": "2024-08-12",
+        "confidence": 1.0
+      },
+      "contractor_name": {
+        "value": "Ironwood General Contractors",
+        "confidence": 1.0
+      },
+      "owner_name": {
+        "value": "Harbor Health Systems",
+        "confidence": 1.0
+      },
+      "scope_description": {
+        "value": "Owner directs installation of two additional hand-wash sinks in exam rooms 210-B and 210-C, including wall blocking, supply and waste connections tied into existing risers.",
+        "confidence": 1.0
+      },
+      "reason_code": {
+        "value": "Owner Request",
+        "confidence": 1.0
+      },
+      "reason_category": {
+        "value": "Owner Request",
+        "confidence": 1.0
+      },
+      "cost_breakdown": {
+        "labor": {
+          "value": 6250.0,
+          "confidence": 1.0
+        },
+        "materials": {
+          "value": 9480.0,
+          "confidence": 1.0
+        },
+        "equipment": {
+          "value": 1100.0,
+          "confidence": 1.0
+        },
+        "overhead_markup": {
+          "value": 2019.6,
+          "confidence": 1.0
+        },
+        "other": {
+          "value": 0.0,
+          "confidence": 1.0
+        },
+        "total": {
+          "value": 18849.6,
+          "confidence": 1.0
+        }
+      },
+      "schedule_impact_days": {
+        "value": 3,
+        "confidence": 1.0
+      },
+      "new_completion_date": {
+        "value": "2025-02-21",
+        "confidence": 1.0
+      },
+      "approved_by": {
+        "value": "Linda Cho",
+        "confidence": 1.0
+      },
+      "contractor_representative": {
+        "value": "Marcus Bell",
+        "confidence": 1.0
+      },
+      "overall_confidence": 1.0,
+      "field_coverage": 0.944,
+      "_validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "grounded": true,
+        "needs_review": false,
+        "review_fields": []
+      }
+    }
+  }
+]

@@ -1,0 +1,28 @@
+*** DEDUCT CHANGE ORDER ***
+
+CO No.      DCO-007
+Job:        Westgate Transit Center
+Date:       02/14/2025
+From:       Apex Civil & Structural, Inc. (General Contractor)
+To:         City of Westgate - Public Works Dept. (Owner)
+
+VALUE ENGINEERING - DELETE DECORATIVE CANOPY AT BUS BAY 3
+
+Per owner's VE workshop of 2/3/25, the architectural steel canopy over bus
+bay 3 is deleted from the contract. Foundations already poured remain; anchor
+bolts to be cut flush and capped.
+
+CREDIT TO OWNER:
+  Structural steel & decking (material) ....... ($9,150.00)
+  Erection labor ............................... ($5,100.00)
+  Crane rental ................................. ($1,850.00)
+  Less: cut & cap anchor bolts (labor) ........  $  650.00
+  OH&P on net credit @ 10% ..................... ($1,545.00)
+                                                 ------------
+  NET DEDUCT ................................... ($16,995.00)
+
+Contract time: reduced by 2 working days.
+Revised substantial completion: 06/20/2025
+
+Accepted:  Priya Raman, P.E., City Engineer
+For Contractor: Dan Okafor, Project Executive

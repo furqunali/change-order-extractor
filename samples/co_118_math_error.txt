@@ -1,0 +1,20 @@
+CHANGE ORDER 118
+Project: Oak Hollow Retail Center
+Date: 2025-01-21
+Contractor: Keystone Commercial Builders
+Owner: Oak Hollow Partners LP
+
+Description: Add 4 roof drains and associated piping at tenant space 12
+after owner's tenant revised the rooftop unit layout.
+
+  Labor ............ $4,000.00
+  Materials ........ $6,000.00
+  Markup 10% ....... $1,000.00
+  -----------------------------
+  TOTAL ............ $13,500.00
+
+Time extension: 2 days
+New completion date: April 4, 2025
+Reason: owner / tenant requested change
+Approved: Greg Lambert (Owner's Rep)
+Submitted by: Nina Alvarez, PM

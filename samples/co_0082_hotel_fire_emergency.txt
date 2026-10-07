@@ -1,0 +1,21 @@
+change order request - emergency
+co number: 0082
+proj - downtown hotel renovation 4th & main
+date 11/22/24
+prime contractor: Summit Construction Inc.
+
+work description: fire suppression system upgrade required by city inspector
+on nov 20 inspection. existing heads dont meet current code, full floor 3 
+replacement needed. work must start immediately per fire marshal order.
+
+est cost:
+parts/materials $19,200
+labor 3 crews x 2 days = $14,400
+permit fees $850
+overhead & profit 15% = $5,167.50
+grand total = $39,617.50
+
+time impact - 4 days
+revised completion: December 6 2024
+reason: code compliance / inspector requirement
+auth: Mike Torres GM
